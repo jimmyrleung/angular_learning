@@ -1,4 +1,2 @@
-<ap-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg" title="Lion"></ap-photo>
-<ap-photo url="http://www.yellowkorner.com/dw/image/v2/AAVG_PRD/on/demandware.static/-/Sites-photo-catalog/default/dwe503b29c/NATURE/13/2913/3662657523805.jpg?sw=1160&sh=1160&sm=fit" title="Lioness"></ap-photo>
-<ap-photo url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknWshXdXJutxCT9n3-oQduBhqcJhZowuk1slffKNDgEwCgePm" title="LionCub"></ap-photo>
+<ap-photo *ngFor="let photo of photos" [url]="photo.url" [title]="photo.title"></ap-photo>
 <router-outlet></router-outlet>
