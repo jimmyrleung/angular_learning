@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
 })
 export class PhotoComponent {
     // Inbound properties
-    @Input() title: string = "";
+    @Input() description: string = "";
     @Input() url: string = "";
 }

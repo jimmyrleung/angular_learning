@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PhotoComponent } from './photo/photo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     // Declarations = Which components are part of this module
@@ -8,6 +9,7 @@ import { PhotoComponent } from './photo/photo.component';
 
     // Which components we want to export to other modules
     // Yes, we need to explicit which components we want to export
-    exports: [PhotoComponent]
+    exports: [PhotoComponent],
+    imports: [HttpClientModule]
 })
 export class PhotoModule { }

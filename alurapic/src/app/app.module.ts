@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 /* Custom Imports */
 import { PhotoModule } from './components/photo.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
