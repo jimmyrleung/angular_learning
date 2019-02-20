@@ -6,7 +6,7 @@ import { NotFoundComponent } from './components/errors/not-found/not-found.compo
 
 // Configuration for each route
 const routes: Routes = [
-  { path: 'users/flavio', component: PhotoListComponent },
+  { path: 'users/:username', component: PhotoListComponent },
   { path: 'photos/add', component: PhotoFormComponent },
   { path: '**', component: NotFoundComponent } // Otherwise
 ];
